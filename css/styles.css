@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Yeseva+One&display=swap);
+
+body {
+  box-sizing: border-box;
+  background-color: black;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+.img-desktop-none {
+  display: none;
+}
+
+.text-desktop-none {
+  display: none;
+}
+
+.projects-title {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #e3b873;
+  margin-top: 0;
+}
+
+.container {
+  max-width: 1256px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.projects-paragraf {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.compl-projects {
+  position: static;
+  background-color: black;
+}
+
+.projects-item {
+  font-family: "Yeseva One";
+  margin-right: 60px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s ease;
+}
+
+.projects-item:hover {
+  color: #e3b873;
+  text-decoration: underline;
+}
+
+.projects-item-highlight {
+  color: #e3b873;
+  text-decoration: underline;
+}
+
+.menu-projects {
+  display: flex;
+  list-style: none;
+  justify-content: right;
+  margin-bottom: 53px;
+  margin-right: 23px;
+}
+
+.detail-title {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+
+.detail-value {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.detail-block {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.about-projects {
+  width: 35%;
+}
+
+.container-projects-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-nav-item {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #ffffff4d;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.detail-nav-item:hover {
+  background-color: #ffffff;
+}
+
+.detail-navigation-con {
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+}
+
+.detail-nav-arrow-left {
+  display: inline-block;
+  background-size: 100%;
+  width: 42px;
+  height: 13px;
+  background-image: url("../images/arrow-left.png");
+}
+
+.detail-nav-arrow-right {
+  display: inline-block;
+  background-size: 100%;
+  width: 42px;
+  height: 13px;
+  background-image: url("../images/arrow-right.png");
+}
+
+.container-projects {
+  position: relative;
+}
+
+.detail-nav-con-mb {
+  display: none;
+}
+
+.image {
+  width: 680px;
+  height: 480px;
+}
+
+.image-desktop .image {
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 800ms ease;
+}
+
+.image-desktop .image.active {
+  opacity: 1;
+}
