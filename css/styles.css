@@ -16,14 +16,6 @@ button {
   background-color: transparent;
 }
 
-.img-desktop-none {
-  display: none;
-}
-
-.text-desktop-none {
-  display: none;
-}
-
 .projects-title {
   font-family: "Yeseva One";
   font-style: normal;
@@ -71,11 +63,6 @@ button {
 }
 
 .projects-item:hover {
-  color: #e3b873;
-  text-decoration: underline;
-}
-
-.projects-item-highlight {
   color: #e3b873;
   text-decoration: underline;
 }
@@ -136,8 +123,7 @@ button {
 }
 
 .detail-navigation-con {
-  display: flex;
-  width: 206px;
+  display: flex;  
   justify-content: space-between;
   align-items: center;
   margin: 0;
@@ -153,6 +139,7 @@ button {
   width: 42px;
   height: 13px;
   background-image: url("../images/arrow-left.png");
+  margin-right: 10px;
 }
 
 .detail-nav-arrow-right {
@@ -161,6 +148,7 @@ button {
   width: 42px;
   height: 13px;
   background-image: url("../images/arrow-right.png");
+  margin-left: 10px;
 }
 
 .container-projects {
@@ -172,16 +160,28 @@ button {
 }
 
 .image {
+  background-size: cover;
+  visibility: hidden;
+  transition: visibility 800ms ease;
+}
+
+.image.active {
+  visibility: visible;
   width: 680px;
   height: 480px;
 }
 
-.image-desktop .image {
-  background-size: cover;
-  opacity: 0;
-  transition: opacity 800ms ease;
+.dots {
+  display: flex;  
+  justify-content: space-between;
+  gap: 10px;
 }
 
-.image-desktop .image.active {
-  opacity: 1;
+.dots .active {
+  background-color: #ffffff;
+}
+
+.menu-projects .active {
+  color: #e3b873;
+  text-decoration: underline;
 }
