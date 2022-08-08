@@ -35,7 +35,6 @@ function initSlider() {
   initCities();
   projectData(0);
 
-
   function initImages() {
     images.forEach((image, index) => {
       let imageDiv = `<div class="image n${index}${index === 0 ? " active" : ""}" style="background-image:url(${image.img});" data-index="${index}"></div>`;
@@ -58,7 +57,6 @@ function initSlider() {
       })
     })
   }
-
 
   function moveSlider(num) {
     // slide to needed image
@@ -105,9 +103,7 @@ function initSlider() {
     sliderProjectData.querySelector(".area-value").innerHTML = images[num].area; //init area 
     sliderProjectData.querySelector(".time-value").innerHTML = images[num].time; //init time period
   }
-
 }
-
 
 document.addEventListener("DOMContentLoaded", function() {
   initSlider();
